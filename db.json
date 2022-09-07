@@ -1,0 +1,666 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "Bắp bò Úc giá tay",
+      "price": 73500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_3748ad092df94267b00bced261af6380_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_3748ad092df94267b00bced261af6380_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b50afc8ac59c4ace9f80fa4aea91901b_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_f45ba677390b4cb7bbe65fac01553c17_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_bdf1a47a2881436f9a967c83150d1c90_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_3649ed2be58a4622b52d965e0bfe96ad_small.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bắp cải tím Đà Lạt PF ",
+      "price": 20500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_cc45667329cf4d36a0aa830e0ea4515e_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_8b0f433c86784b44ae25bf66503b774e_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_cc45667329cf4d36a0aa830e0ea4515e_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_8b0f433c86784b44ae25bf66503b774e_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_1b1fc068aebd4604a4ee482fcb214069_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_9a34a406715e44f3b2c6241181b789cc_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_a84eb6cf5c924e36a2965fdd90d2ed08_small.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Bắp giò heo Vissan",
+      "price": 22400,
+      "image": "https://product.hstatic.net/1000150349/product/upload_aeb5dd776f03427ea7f42e264201c1c3_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_13c5b2651ab24bb784762220cc46e632_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_aeb5dd776f03427ea7f42e264201c1c3_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_13c5b2651ab24bb784762220cc46e632_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_f883e6e0fd834bc0adf1733fa1333bf8_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_ef502a13c5364183a40c8836fb901cbd_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b81d687cd40346a28b8cf02bfcd604c5_small.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Bí ngòi xanh Đà Lạt ",
+      "price": 12000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_0b34afdd589e4b00a36f4cde9c480e19_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_0b34afdd589e4b00a36f4cde9c480e19_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_8f075bca052b4103bddd42961efb0f78_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_0b34afdd589e4b00a36f4cde9c480e19_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_cedb2f4048664af887e3016bd9811817_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_a63077f6b28f46b5b73e00dded5e6ec8_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_dba3bfb227034f61a48cda208cccdcd9_small.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Cá bạc má ",
+      "price": 62400,
+      "image": "https://product.hstatic.net/1000150349/product/upload_010927338b8b4eed8ad0fa9297428b22_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_010927338b8b4eed8ad0fa9297428b22_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "seafood",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_010927338b8b4eed8ad0fa9297428b22_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_0420ba87242941e08465129eb51ef117_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_afbe3da557d440d3b275507044f240b9_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_98068d54be034209ac499231870756c0_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_6a3840f9cbd44bb084fe8ab1ec002b5b_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_69dae08f18f74954a79ee32afbbfbacc_small.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Cá basa không đầu ",
+      "price": 45000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_7ebac85521574141bb0a1861db7b3b86_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_03e97643c6dd4f52a86a800a13d277d1_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "seafood",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_7ebac85521574141bb0a1861db7b3b86_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_03e97643c6dd4f52a86a800a13d277d1_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_29296720b89b422e90d1496a9d04e310_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_af0adac3bc0641c0bc2aaee911436536_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b2fc0ea1b33a4fa7acdac6c1fa6e30a7_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b6871050b4554d95bba62549e035ad41_small.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Cá basa phi lê",
+      "price": 19500,
+      "image": "//product.hstatic.net/1000150349/product/upload_174f90bcf9e84cf59e03fc0e22073546_large.jpg",
+      "img": "//product.hstatic.net/1000150349/product/upload_28be3b7aff25414ca30f50857eaf7c20_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "seafood",
+      "sale": true,
+      "sales": 22,
+      "prices": 25000,
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_174f90bcf9e84cf59e03fc0e22073546_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_28be3b7aff25414ca30f50857eaf7c20_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_a58c6013c8a1488f957fd0e10844956a_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_bbc1a53b7d0746aa8c11e96e7aafba28_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_05f4455dbc9b460dba378e6faf37b9d9_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_1f2b690e94654be0be1f87aa55fa5e55_small.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Cà chua Đà Lạt ",
+      "price": 11000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_1b00c27ada6543d5b5601b02197627da_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_0fa1f640a6084b25952482199d08b6e8_large.jpg",
+      "status": "outstanding",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_1b00c27ada6543d5b5601b02197627da_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_0fa1f640a6084b25952482199d08b6e8_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_6b7d09ec06064354a43cd0b48f20a9df_small.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Ổi lê Đài Loan",
+      "price": 16200,
+      "image": "https://product.hstatic.net/1000150349/product/upload_dea02f30a6374099b9a2ccd889296c1a_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_bc869ed39974421b86137914956fde8c_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "fruit",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_dea02f30a6374099b9a2ccd889296c1a_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_bc869ed39974421b86137914956fde8c_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_88c7f1445e5d41f3a09c63bb5a5260cd_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_1dab2e19a4704f0b907d08a18b7fe429_small.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Ớt chuông đỏ Đà Lạt PF",
+      "price": 51000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_5ee2dc620eaa4265b589990ca83b0e5d_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_9a3b9ad4bf20497e9fcc0f982b0fc3e8_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_5ee2dc620eaa4265b589990ca83b0e5d_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_9a3b9ad4bf20497e9fcc0f982b0fc3e8_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_61e91a16ee544c3a9c7086e327feffd2_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_fb7850cbb05e413e9d9609e6cc1b9cf3_small.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Ớt sừng đỏ Đà Lạt ",
+      "price": 93000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_4e6d173e447f42178394cb311c91bc8f_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_9c9a33cb15eb475e9e5747ee38460586_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_4e6d173e447f42178394cb311c91bc8f_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_9c9a33cb15eb475e9e5747ee38460586_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_90bfb70967de48f29c440474945ab729_small.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Sườn chặt heo ",
+      "price": 48500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_16e9405a46d04e27a9795085dacee09e_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_00eff26986794c4fbd79c1bca7199de5_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_16e9405a46d04e27a9795085dacee09e_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_00eff26986794c4fbd79c1bca7199de5_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_fd5d31779fca48a1ae87fcb257b866a5_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_df3b73373e3744a183e946a63195fc18_small.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Thanh long TG PFMN ",
+      "price": 28500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_6c8958562e6f4bf2bc19fceb328107f9_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_6c8958562e6f4bf2bc19fceb328107f9_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "fruit",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_bf970d20a15f4436b4b8cdec1490c564_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_6c8958562e6f4bf2bc19fceb328107f9_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b307d30895ad477598925b06687424c7_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_ff0731f7818c421289daa3f18a428195_small.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Thịt heo xay Vissan  ",
+      "price": 26400,
+      "image": "https://product.hstatic.net/1000150349/product/upload_18e5236c228f4ed38f4fb2a0c4d7f332_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_28f96e10f1f64ae2ba0faa9c717dcfd0_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_18e5236c228f4ed38f4fb2a0c4d7f332_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_28f96e10f1f64ae2ba0faa9c717dcfd0_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b38c68d125fc472a98abbd00dcb40d21_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b90509e3d64a462580965263632e1160_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_0a5c6df5ab54468096dab6df8963cea2_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_57a903b434254a2f9ceccd37629c07bb_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_7eab92c538ea4eee85537be83dd5d44a_small.jpg"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Tôm thẻ tươi ",
+      "price": 93500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_e35743698aed4aa3bd209f935888ae92_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_b757176952de4666a6e343ee8f333084_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "seafood",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_e35743698aed4aa3bd209f935888ae92_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b757176952de4666a6e343ee8f333084_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_8b48d274e41542489e8c0d7eabfbea6f_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_33571c67281f45e38dc307602ac1e201_small.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Xoài Tứ Quý ",
+      "price": 39200,
+      "image": "https://product.hstatic.net/1000150349/product/upload_89b32d3f1f20439d8cb2f75fe76d5700_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_597e8e86f957481f8a01631560b9ec02_large.jpg",
+      "status": "new",
+      "category": "shop",
+      "other": "fruit",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_89b32d3f1f20439d8cb2f75fe76d5700_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_597e8e86f957481f8a01631560b9ec02_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_4240aa3256b54c4f810492b1b738fc9a_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_03d3fca316c54e509c7e85c37f6a1e04_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_4d6d11d35ab54563ae0ce7fb97f609d7_small.jpg"
+      ]
+    },
+    {
+      "id": 17,
+      "title": " ",
+      "price": "",
+      "image": "https://hstatic.net/349/1000150349/1000203344/block_home_category1.jpg?v=28",
+      "img": "",
+      "status": "banner",
+      "sale": false,
+      "sales": "",
+      "prices": " "
+    },
+    {
+      "id": 18,
+      "title": " ",
+      "price": "",
+      "image": "https://hstatic.net/349/1000150349/1000203344/block_home_category2.jpg?v=28",
+      "img": "",
+      "status": "banner",
+      "sale": false,
+      "sales": "",
+      "prices": " "
+    },
+    {
+      "id": 19,
+      "title": "Xương ống heo Vissan",
+      "price": 18000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_e512236240c0433dbb1c409db0960141_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_9fb32dd32e0f42c0a045076dcf1cf68e_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_e512236240c0433dbb1c409db0960141_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_9fb32dd32e0f42c0a045076dcf1cf68e_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_cf758c8d267b421da277b07b5a519f26_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_4657af0be64c47d1b1e1cc428f83f29e_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_5d447d62c7ca4cfca68530d06b4964c5_small.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Khoai lang Nhật Đà Lạt PF",
+      "price": 36000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_e915f5ea499c4889b311cc0e785b610c_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_531f5e4891fd4d1c9478604e2ae074f9_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_e915f5ea499c4889b311cc0e785b610c_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_531f5e4891fd4d1c9478604e2ae074f9_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_470886d6b85a49d681bfe14a1675a318_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_836987010ba844ac84996ee7d7665444_small.jpg"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Ếch làm sạch ",
+      "price": 96400,
+      "image": "https://product.hstatic.net/1000150349/product/upload_ec9ac441be6844cebdbd96158dc3feba_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_95b7dd9ddfe84ce195a16cf593782c70_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_ec9ac441be6844cebdbd96158dc3feba_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_95b7dd9ddfe84ce195a16cf593782c70_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_c7c748e3377a4471894ca960b2dd39d5_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_0b1eaab1b72c460abc59121a84433ccf_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_76ae59a6bb3345f1995222a5e1a17158_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_6482d5c50e45454d927202af01aea39a_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b6e9d0b935194ad3a58ebd2b8f48e230_small.jpg"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Đùi gà công nghiệp góc tư Unitek",
+      "price": 28200,
+      "image": "https://product.hstatic.net/1000150349/product/upload_8525d2c37c624693ab1cbc396f37f395_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_70ecee521e394a65b9332e76974b13cb_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_8525d2c37c624693ab1cbc396f37f395_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_70ecee521e394a65b9332e76974b13cb_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_7fac883ea62d4980864d09ca753a705e_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_faf9394b6b8e4a7880d4cabf403e552a_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_cff94ade34374265ade5ab86148b87f8_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_a8f8825b45aa4a9bb401091a7a05b615_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_1d7be74249b3464ea4705965f94250b4_small.jpg"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Dưa gang trái tròn",
+      "price": 17500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_f9322899ce7b4bb5bd4bbc64fe006153_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_f9322899ce7b4bb5bd4bbc64fe006153_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "fruit",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_f9322899ce7b4bb5bd4bbc64fe006153_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_19d64b4829a844349105fd9d7de3ba19_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_7077bfb9a3d04a25a90e29880b44f280_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_c953a3f856164b4dae5b47d952c9e16a_small.jpg"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Củ cải trắng ",
+      "price": 10000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_8e603157f94e499197e7f0fc9c124fae_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_317c3523f404471eb3b7b796d60a5667_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_8e603157f94e499197e7f0fc9c124fae_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_317c3523f404471eb3b7b796d60a5667_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_cba57b50c0c04aedb1bad6376a17d4af_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_f9127863289141d9a348b5b154199f42_small.jpg"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Cua thịt sống",
+      "price": 132700,
+      "image": "https://product.hstatic.net/1000150349/product/upload_dfb4cedd667447b38df4b8b671053095_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_5b2c176113074858b3824ceb2bf27e56_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "seafood",
+      "sale": true,
+      "sales": 44,
+      "prices": 221100,
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_dfb4cedd667447b38df4b8b671053095_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_5b2c176113074858b3824ceb2bf27e56_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_2ed3c37554d44b779159ded3ff73a9dd_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_4cb1821a199d4da5842e9f5c204ccd64_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_ea91067bca034b8fad591f34b3bb3ffa_small.jpg"
+      ]
+    },
+    {
+      "id": 26,
+      "title": " Cốt lết heo Vissan ",
+      "price": 41500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_3b9744b87f3c49a29c87ece650a566ed_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_61de241bba8c4272893395c4e310d17c_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_3b9744b87f3c49a29c87ece650a566ed_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_61de241bba8c4272893395c4e310d17c_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_a1cb71ac5b6e4e4187f84e5f5720e2a6_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_2565b3cf80c94b03af1592b77ab14788_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_3b5d8a4d516f4049b67983defbe2cba2_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_00f30b17dcce49c2b2431036f3e1865d_small.jpg"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Cà tím tròn",
+      "price": 6200,
+      "image": "https://product.hstatic.net/1000150349/product/upload_b199aaf4eca9455d9c5bd54798c2843d_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_b199aaf4eca9455d9c5bd54798c2843d_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_b199aaf4eca9455d9c5bd54798c2843d_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_ca650244376049e7b99bbf6e2367d24b_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_598746e5e3484035afc3676c2bc63e52_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_b9fd6f80a4b1463b984f8842ef57a37b_small.jpg"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Cà rốt Đà Lạt loại 1",
+      "price": 20000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_32aba7321a814c46a1dd61ecd74410ef_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_32aba7321a814c46a1dd61ecd74410ef_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_099369b3045f463aa96de3ddaa4ee098_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_32aba7321a814c46a1dd61ecd74410ef_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_6291787b73464bd18879674d53adce56_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_77e8a539ab2b47e4a912e404b19cdc62_small.jpg"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Cánh gà công nghiệp ",
+      "price": 40300,
+      "image": "https://product.hstatic.net/1000150349/product/upload_0b864657c6b34fbfafee111014e24e7f_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_0bf4c20ec8f34e50933a2d9bbd8e9124_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "meat",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_0b864657c6b34fbfafee111014e24e7f_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_0bf4c20ec8f34e50933a2d9bbd8e9124_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_52a3aebde9e54a99a5d36ced77593959_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_19f60a969e9d46979b5f7c9082d27f22_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_28afb7069e0a45ff97c9a2038ffcca12_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_46d30f78f2ec4b2f842a44c3eb7d7f54_small.jpg"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Cá ngừ đại dương phi lê ",
+      "price": 88500,
+      "image": "https://product.hstatic.net/1000150349/product/upload_04900d6dbd564448ac3b25de72c5706b_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_499dfd2b48144933870cbb9009060559_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "seafood",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_04900d6dbd564448ac3b25de72c5706b_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_499dfd2b48144933870cbb9009060559_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_32c96ffe4397407591a0284aa96b800b_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_787e6a00085a4a94b589dc06e6392ce3_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_490b58501dd54046ba4db473808f2371_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_3812ed697656421d97a7db401463fdff_small.jpg"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Cải dúng (cải dún) Đà Lạt PF ",
+      "price": 29000,
+      "image": "https://product.hstatic.net/1000150349/product/upload_4744997ca76844fab690f48a0a64bcb4_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_f3ee5e1b2e364760834fcdb637663cd1_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "vegetable",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_4744997ca76844fab690f48a0a64bcb4_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_f3ee5e1b2e364760834fcdb637663cd1_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_ae68c92afeb74a0dbd51b7208494c68b_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_8dd5b5a1ce57473cb155b0e071a8e992_small.jpg"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Cá diêu hồng sống 0.4 - 0.8 kg ",
+      "price": 22400,
+      "image": "https://product.hstatic.net/1000150349/product/upload_cf0d9452bfbb4048880914523faa536a_large.jpg",
+      "img": "https://product.hstatic.net/1000150349/product/upload_dd3be6ca09934a708b40f6349f3e5408_large.jpg",
+      "status": "",
+      "category": "shop",
+      "other": "seafood",
+      "sale": false,
+      "sales": "",
+      "prices": " ",
+      "avatar": [
+        "https://product.hstatic.net/1000150349/product/upload_cf0d9452bfbb4048880914523faa536a_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_dd3be6ca09934a708b40f6349f3e5408_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_657ce925c93247e9823324ad7335fa2d_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_2bb66f9286064098834c1c3bcf234247_small.jpg",
+        "https://product.hstatic.net/1000150349/product/upload_a51267ba7dd64de184a2a20cea4fb422_small.jpg"
+      ]
+    }
+  ],
+  "user": [
+    {
+      "email": "cuongha12@gmail.com",
+      "name": "cuongha12",
+      "phone": "0387791205",
+      "password": "123456a@",
+      "confirmedPassword": "123456a@",
+      "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "name": "admin",
+      "phone": "0328296951",
+      "password": "1",
+      "confirmedPassword": "1",
+      "id": 2
+    },
+    {
+      "email": "admin12@gmail.com",
+      "name": "admin",
+      "phone": "0329393293",
+      "password": "123456a@",
+      "confirmedPassword": "123456a@",
+      "id": 3
+    },
+    {
+      "email": "hailua12@gmail.com",
+      "name": "hailu12",
+      "phone": "0985376801",
+      "password": "hailua12@",
+      "confirmedPassword": "hailua12@",
+      "id": 4
+    },
+    {
+      "email": "test@gmail.com",
+      "name": "test",
+      "phone": "0978785188",
+      "password": "test123@",
+      "confirmedPassword": "test123@",
+      "id": 5
+    }
+  ]
+}
