@@ -4,11 +4,13 @@ import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import '../Detail/detail.css'
 import { Image } from 'antd';
 import { Rate } from 'antd';
-import OwlCarousel from 'react-owl-carousel';
+
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, updateCart } from '../../Redux/actions/cart';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Detail = () => {
     const { item } = useParams()
     const [product, setProduct] = useState([])
@@ -32,7 +34,7 @@ const Detail = () => {
     }
     const [count, setCount] = useState(1)
     const dispatch = useDispatch()
-    const handUpdate = (e, data,type) => {
+    const handUpdate = (e, data, type) => {
         if (type === "plus") {
             var item = {
                 id: data.id,
@@ -95,11 +97,11 @@ const Detail = () => {
                                     </span>
                                 </h3>
                                 <div className='product-action'>
-                                    <button className='action-minus' onClick={(e) => handUpdate(e, product,"minus")}>
+                                    <button className='action-minus' onClick={(e) => handUpdate(e, product, "minus")}>
                                         <i className="fa-solid fa-minus" ></i>
                                     </button>
                                     <input className="action-input" title="Quantity Number" type="text" name="quantity" value={`${count}`} onChange={() => console.log('xx')} />
-                                    <button className="action-plus" title="Quantity Plus" onClick={(e) => handUpdate(e, product,"plus")}>
+                                    <button className="action-plus" title="Quantity Plus" onClick={(e) => handUpdate(e, product, "plus")}>
                                         <i className="fa-solid fa-plus"></i>
                                     </button>
                                 </div>
@@ -147,27 +149,50 @@ const Detail = () => {
                                         if (user.userId === null) {
                                             navigate('/signup')
                                         } else {
+                                            toast.success('Thêm sản phẩm thành công', {
+                                                position: "top-right",
+                                                autoClose: 100,
+                                                hideProgressBar: false,
+                                                closeOnClick: true,
+                                                pauseOnHover: true,
+                                                draggable: true,
+                                                progress: undefined,
+                                            });
                                             dispatch(addToCart(product))
-                                        }}}>
+                                        }
+                                    }}>
                                         <i className="fa-solid fa-basket-shopping"></i>
                                         <span>add to cart</span>
                                     </button>
-                            </div>
-                            <div className="details-action-group">
-                                <a className="details-wish wish" href="#" title="Add Your Wishlist">
-                                    <i className="fa-solid fa-heart"></i>
-                                    <span>add to wish</span>
-                                </a>
-                                <a className="details-compare" href="compare.html" title="Compare This Item">
-                                    <i className="fa-solid fa-shuffle"></i>
-                                    <span>Compare This</span>
-                                </a>
+                                </div>
+                                <ToastContainer
+                                    position="top-right"
+                                    autoClose={100}
+                                    hideProgressBar={false}
+                                    newestOnTop={false}
+                                    closeOnClick
+                                    rtl={false}
+                                    pauseOnFocusLoss
+                                    draggable
+                                    pauseOnHover
+                                />
+                                {/* Same as */}
+                                <ToastContainer />
+                                <div className="details-action-group">
+                                    <a className="details-wish wish" href="#" title="Add Your Wishlist">
+                                        <i className="fa-solid fa-heart"></i>
+                                        <span>add to wish</span>
+                                    </a>
+                                    <a className="details-compare" href="compare.html" title="Compare This Item">
+                                        <i className="fa-solid fa-shuffle"></i>
+                                        <span>Compare This</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-        </div>
+                </div>
             </section >
             <section className='inner-section tu'>
                 <div className='container'>

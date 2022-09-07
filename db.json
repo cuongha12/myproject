@@ -661,6 +661,14 @@
       "password": "test123@",
       "confirmedPassword": "test123@",
       "id": 5
+    },
+    {
+      "email": "admin132@gmail.com",
+      "name": "helllll",
+      "phone": "0392013903",
+      "password": "123456a@",
+      "confirmedPassword": "123456a@",
+      "id": 6
     }
   ]
 }

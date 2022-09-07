@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../Redux/actions/cart';
 import { toast, ToastContainer } from 'react-toastify';
 
-
+import 'react-toastify/dist/ReactToastify.css';
 const ProductHome = () => {
     const [product, setProduct] = useState([])
     const Product = async () => {
@@ -65,7 +65,15 @@ const ProductHome = () => {
                                                                 if (user.userId === null) {
                                                                     navigate('/signup')
                                                                 } else {
-
+                                                                    toast.success('Thêm sản phẩm thành công', {
+                                                                        position: "top-right",
+                                                                        autoClose: 100,
+                                                                        hideProgressBar: false,
+                                                                        closeOnClick: true,
+                                                                        pauseOnHover: true,
+                                                                        draggable: true,
+                                                                        progress: undefined,
+                                                                    });
                                                                     dispatch(addToCart(e))
                                                                 }
 
@@ -105,6 +113,19 @@ const ProductHome = () => {
                                     ))
                                 }
                             </div>
+                            <ToastContainer
+                                position="top-right"
+                                autoClose={100}
+                                hideProgressBar={false}
+                                newestOnTop={false}
+                                closeOnClick
+                                rtl={false}
+                                pauseOnFocusLoss
+                                draggable
+                                pauseOnHover
+                            />
+                            {/* Same as */}
+                            <ToastContainer />
                             <div className='row'>
                                 <div className='col-lg-12 col-sm-12 col-xs-12  pull-center center'>
                                     <NavLink className={'btn btn-readmore'} to={'/shop'}>Xem thêm</NavLink>

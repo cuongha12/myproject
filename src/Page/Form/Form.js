@@ -59,11 +59,11 @@ const Form = () => {
         button: "Ok!",
       });
       const userForm = product.find(e => {
-        return e.email === formik.values.email || e.phone === formik.values.phone
+        return e.email === formik.values.email
       })
       if (userForm) {
         swal({
-          title: "Email hoặc số điện thoại này đã có người đăng kí",
+          title: "Email  này đã được sử dụng",
           icon: "error",
           button: "Vui lòng đăng kí lại !",
         });
