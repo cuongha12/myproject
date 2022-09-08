@@ -11,6 +11,7 @@ const Form = () => {
   let navigate = useNavigate();
   const dispatch = useDispatch()
   const [product, setProduct] = useState([])
+  const [show, setShow] = useState(true)
   const User = async () => {
     return await axios.get('http://localhost:3000/user')
       .then(res => setProduct(res.data))
@@ -75,6 +76,7 @@ const Form = () => {
       }
     },
   });
+
   return (
     <div className='form-login'>
       <div className='user-form-part'>
@@ -100,7 +102,6 @@ const Form = () => {
                         onChange={formik.handleChange}
                         placeholder="Enter your name"
                         className='form-control'
-
                       />
                       {formik.errors.name && (
                         <p className="errorMsg"> {formik.errors.name} </p>
@@ -116,13 +117,14 @@ const Form = () => {
                         placeholder="Enter your email"
                         className='form-control'
                       />
+
                       {formik.errors.email && (
                         <p className="errorMsg"> {formik.errors.email} </p>
                       )}
                     </div>
-                    <div className='form-group'>
+                    <div className='form-group input-password'>
                       <input
-                        type="password"
+                        type={show ? "password" : "text"}
                         id="password"
                         name="password"
                         value={formik.values.password}
@@ -130,6 +132,7 @@ const Form = () => {
                         placeholder="Enter your password"
                         className='form-control'
                       />
+                      <i className={show ? "fa-solid fa-eye-slash icon-eye" : "fa-solid fa-eye icon-eye"} onClick={() => setShow(!show)}></i>
                       {formik.errors.password && (
                         <p className="errorMsg"> {formik.errors.password} </p>
                       )}

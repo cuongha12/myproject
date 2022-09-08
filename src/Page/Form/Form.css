@@ -99,3 +99,12 @@
   margin-left: 5px;
   color: #119744 !important;
 }
+.icon-eye{
+ position: absolute;
+ top: 16px;
+ right: 20px;
+ cursor: pointer;
+}
+.input-password{
+  position: relative;
+}
