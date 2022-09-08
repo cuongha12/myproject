@@ -3,6 +3,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { toast, ToastContainer } from 'react-toastify'
 import { addToCart } from '../../Redux/actions/cart'
 import "../Shop/Shop.css"
 const SHop = () => {
@@ -431,6 +432,15 @@ const SHop = () => {
                                     if (user.userId === null) {
                                       navigate('/signup')
                                     } else {
+                                      toast.success(`Thêm  sản phẩm  thành công`, {
+                                        position: "top-right",
+                                        autoClose: 100,
+                                        hideProgressBar: false,
+                                        closeOnClick: true,
+                                        pauseOnHover: true,
+                                        draggable: true,
+                                        progress: undefined,
+                                      });
                                       dispatch(addToCart(e))
                                     }
                                   }}>
@@ -465,6 +475,19 @@ const SHop = () => {
                     }
                   </div>
                 </div>
+                <ToastContainer
+                  position="top-right"
+                  autoClose={100}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                />
+                {/* Same as */}
+                <ToastContainer />
                 <div className={page ? "mok " : 'col-md-12 col-sm-12 col-xs-12 '}>
                   <div className='clearfix'>
                     <div id='pagination'>

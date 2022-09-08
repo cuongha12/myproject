@@ -65,7 +65,7 @@ const ProductHome = () => {
                                                                 if (user.userId === null) {
                                                                     navigate('/signup')
                                                                 } else {
-                                                                    toast.success('Thêm sản phẩm thành công', {
+                                                                    toast.success(`Thêm  sản phẩm  thành công`, {
                                                                         position: "top-right",
                                                                         autoClose: 100,
                                                                         hideProgressBar: false,

@@ -50,8 +50,8 @@ const Header = () => {
                                             <li>
                                                 <a href="#"><i className="fa fa-phone" aria-hidden="true"></i>1900.636.099</a>
                                             </li>
-                                            <li><a className="reg" href="/account/register" title="Đăng ký">ĐĂNG KÝ</a></li>
-                                            <li><a className="log" href="/account/login" title="Đăng nhập">Đăng nhập</a></li>
+                                            <li><a className="reg" title="Đăng ký">ĐĂNG KÝ</a></li>
+                                            <li><a className="log" title="Đăng nhập">Đăng nhập</a></li>
                                         </ul>
                                     </nav>
                                     <div className="header_line"><p>Miễn phí vận chuyển<span className="mar-l5">ĐƠN HÀNG TRÊN 900K</span></p></div>
@@ -168,7 +168,7 @@ const Header = () => {
                                     </a>
                                 </li>) : (<li className="nav-item ">
                                     <a className="nav-link " >
-                                        <img src='https://mcdn.nhanh.vn/store/18131/ps/20171117/22228659_1958158637798279_6481759436594791816_n_552x640.jpg' className='img-user'/>
+                                        <img src='https://mcdn.nhanh.vn/store/18131/ps/20171117/22228659_1958158637798279_6481759436594791816_n_552x640.jpg' className='img-user' />
                                     </a>
                                 </li>)}
                                 <li className='nav-item has-childs'>

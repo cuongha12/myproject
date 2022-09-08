@@ -53,7 +53,6 @@ const Cart = () => {
     const hanDele = (id) => {
         const data = [...products.cartItems];
         const cartFilter = data.filter((c) => c.id !== id.id);
-        console.log({ cartItems: cartFilter });
         setProducts({ cartItems: cartFilter });
         dispatch(removeFromCart((cartFilter)))
     }
