@@ -17,11 +17,11 @@ const Detail = () => {
     const [previous, setPrevious] = useState(0)
     const [products, setProducts] = useState([])
     const Item = async () => {
-        return await axios.get(`http://localhost:3000/product/${item}`)
+        return await axios.get(`https://orangic-server.herokuapp.com/product/${item}`)
             .then(res => setProduct(res.data))
     }
     const Items = async () => {
-        return await axios.get('http://localhost:3000/product')
+        return await axios.get('https://orangic-server.herokuapp.com/product')
             .then(res => setProducts(res.data))
     }
     useEffect(() => {
@@ -45,7 +45,6 @@ const Detail = () => {
         } else if (count === 1) {
             return
         } else {
-            console.log('xxxxxx');
             var item = {
                 id: data.id,
                 quantity: count - 1

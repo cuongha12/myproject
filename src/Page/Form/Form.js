@@ -14,7 +14,7 @@ const Form = () => {
   const [show, setShow] = useState(true)
   const [shows, setShows] = useState(true)
   const User = async () => {
-    return await axios.get('http://localhost:3000/user')
+    return await axios.get('https://orangic-server.herokuapp.com/user')
       .then(res => setProduct(res.data))
   }
   useEffect(() => {
@@ -70,7 +70,7 @@ const Form = () => {
           button: "Vui lòng đăng kí lại !",
         });
       } else {
-        const userCard = await axios.post('http://localhost:3000/user',
+        const userCard = await axios.post('https://orangic-server.herokuapp.com/user',
           formik.values)
         dispatch(createUser(product))
         navigate('/signup')

@@ -18,7 +18,7 @@ const SHop = () => {
 
   const number = [1, 2, 3]
   const Product = async () => {
-    return await axios.get('http://localhost:3000/product?_page&_limit=12')
+    return await axios.get('https://orangic-server.herokuapp.com/product?_page&_limit=12')
       .then(res => setProduct(res.data))
   }
   useEffect(() => {
@@ -125,7 +125,7 @@ const SHop = () => {
     },
   ]
   const handClick = async (id) => {
-    return await axios.get(`http://localhost:3000/product?_page=${id}&_limit=12`)
+    return await axios.get(`https://orangic-server.herokuapp.com/product?_page=${id}&_limit=12`)
       .then(res => {
         setProduct(res.data)
         setCurrent(id)
@@ -133,7 +133,7 @@ const SHop = () => {
   }
   const handFilter = async (name) => {
     if (name !== 'all') {
-      return await axios.get(`http://localhost:3000/product?other=${name}&_order=asc`)
+      return await axios.get(`https://orangic-server.herokuapp.com/product?other=${name}&_order=asc`)
         .then(res => {
           setProduct(res.data)
           setPage(true)

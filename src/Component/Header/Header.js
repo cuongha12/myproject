@@ -15,7 +15,7 @@ const Header = () => {
     const [search, setSearch] = useState("")
     const [product, setProduct] = useState([])
     const productSearch = async () => {
-        return await axios.get('http://localhost:3000/product')
+        return await axios.get('https://orangic-server.herokuapp.com/product')
             .then(res => setProduct(res.data))
     }
     useEffect(() => {
