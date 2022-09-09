@@ -6,23 +6,12 @@ import { addToCart } from '../../Redux/actions/cart'
 import "../Search/Search.css"
 const Search = () => {
     const itemSearchs = useSelector(state => state.text)
-    let { id } = useParams()
-    const [product, setProduct] = useState([])
-    const Product = async () => {
-        return await axios.get(`http://localhost:3000/product?q=${id.toLowerCase()}`)
-            .then(res => setProduct(res.data))
-    }
-    useEffect(() => {
-        Product()
-    }, [])
-
     let navigate = useNavigate()
     const handDetail = (item) => {
         navigate(`/detail/${item}`)
     }
     const dispatch = useDispatch()
     const user = useSelector(e => e.user)
-
     return (
         <div>
             <div className="wrap-breadcrumb">
