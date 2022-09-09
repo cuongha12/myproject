@@ -5,13 +5,22 @@ import { RemoveUserToLocalStorage } from '../../Redux/actions/user'
 import { removeFromCart } from '../../Redux/actions/cart'
 import "../Header/Header.component.css"
 import SearchReducer from '../../Redux/reducers/search'
+import axios from 'axios'
+import { createSearch } from '../../Redux/actions/search'
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false)
     const [show, setShow] = useState(false)
     const [menu, setMenu] = useState(false)
     const [search, setSearch] = useState("")
-
+    const [product, setProduct] = useState([])
+    const productSearch = async () => {
+        return await axios.get('http://localhost:3000/product')
+            .then(res => setProduct(res.data))
+    }
+    useEffect(() => {
+        productSearch()
+    })
     useLayoutEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 120)
@@ -31,7 +40,12 @@ const Header = () => {
             e.preventDefault()
             navigate(`search/${search}`)
             setSearch('')
-            dispatch(SearchReducer(search))
+            const obj = {
+                array: product,
+                value: search
+            }
+            dispatch(createSearch(obj))
+            setShow(false)
         }
     }
     const cartProduct = useSelector(state => state.cart)

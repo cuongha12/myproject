@@ -29,7 +29,7 @@ const Navbar = () => {
     }, [])
     const dispatch = useDispatch()
     const handSearch = (e) => {
-        if (search === "") {
+        if (search === "" ) {
             e.preventDefault()
 
         } else {

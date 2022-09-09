@@ -279,7 +279,7 @@
 
 .currents {
     border-bottom: 2px solid #28b241;
-    color: #28b241;
+    color: #28b241 !important;
 }
 
 .mok {
