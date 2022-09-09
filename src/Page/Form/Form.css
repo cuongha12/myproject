@@ -108,3 +108,12 @@
 .input-password{
   position: relative;
 }
+.input-passwords{
+  position: relative;
+}
+.icon-eyes{
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  cursor: pointer;
+ }

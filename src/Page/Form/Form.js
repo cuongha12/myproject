@@ -12,6 +12,7 @@ const Form = () => {
   const dispatch = useDispatch()
   const [product, setProduct] = useState([])
   const [show, setShow] = useState(true)
+  const [shows, setShows] = useState(true)
   const User = async () => {
     return await axios.get('http://localhost:3000/user')
       .then(res => setProduct(res.data))
@@ -137,9 +138,9 @@ const Form = () => {
                         <p className="errorMsg"> {formik.errors.password} </p>
                       )}
                     </div>
-                    <div className='form-group'>
+                    <div className='form-group input-passwords'>
                       <input
-                        type="password"
+                        type={shows ? "password" : "text"}
                         id="confirmedPassword"
                         name="confirmedPassword"
                         value={formik.values.confirmedPassword}
@@ -147,6 +148,7 @@ const Form = () => {
                         placeholder="Confirm your password"
                         className='form-control'
                       />
+                      <i className={shows ? "fa-solid fa-eye-slash icon-eyes" : "fa-solid fa-eye icon-eyes"} onClick={() => setShows(!shows)}></i>
                       {formik.errors.confirmedPassword && (
                         <p className="errorMsg"> {formik.errors.confirmedPassword} </p>
                       )}
