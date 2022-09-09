@@ -1,8 +1,8 @@
 {
-  "homepage": "https://cuongha12.github.io/myproject/",
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cuongha12.github.io/myproject/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@reduxjs/toolkit": "^1.8.5",
