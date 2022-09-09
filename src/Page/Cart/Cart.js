@@ -4,7 +4,7 @@ import { checkOutCart, removeFromCart, updateCart } from '../../Redux/actions/ca
 import swal from 'sweetalert';
 
 import '../Cart/Cart.css'
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 const Cart = () => {
     const dispatch = useDispatch()
     const cartProduct = useSelector(e => e.cart)
@@ -73,7 +73,7 @@ const Cart = () => {
                     <div className="row main-header">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5  ">
                             <ol className="breadcrumb breadcrumb-arrows">
-                                <li><a href='/'>Trang chủ</a></li>
+                                <li><NavLink to={'/'}>Trang chủ</NavLink></li>
                                 <li><a >Giỏ hàng</a></li>
                             </ol>
                         </div>
@@ -88,7 +88,9 @@ const Cart = () => {
                                 <div className="cart-empty">
                                     <img src="https://bizweb.dktcdn.net/100/414/728/themes/867455/assets/empty-cart.png?1661616129384" className="img-responsive center-block" />
                                     <div className="btn-cart-empty">
-                                        <a className="btn btn-default" href="/shop" title="Tiếp tục mua sắm">Tiếp tục mua sắm</a>
+                                        <NavLink className="btn btn-default" title="Tiếp tục mua sắm" to={'/shop'}>
+                                            Tiếp tục mua sắm
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +190,6 @@ const Cart = () => {
                                             </table>
                                             <div className='row'>
                                                 <div className=' col-lg-6 col-md-6 col-sm-6 col-xs-12 '>
-
                                                 </div>
                                                 <div className='col-md-6 col-sm-6 col-xs-12 cart-buttons inner-right inner-left col-lg-6'>
                                                     <div className='buttons' >
@@ -207,9 +208,9 @@ const Cart = () => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12 col-sm-12  col-xs-12 continue-shop">
-
-                                                    <a className='router' href='/shop'>
-                                                        <i className="fa fa-reply"></i> Tiếp tục mua hàng</a>
+                                                    <NavLink className='router' to={'/shop'}>
+                                                        <i className="fa fa-reply"></i> Tiếp tục mua hàng
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                         </form>

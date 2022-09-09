@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useFormik } from "formik";
 import "../Form/Form.css"
 import * as Yup from "yup";
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveUserToLocalStorage } from '../../Redux/actions/user';
@@ -11,6 +11,7 @@ import swal from 'sweetalert';
 const Login = () => {
   let navigate = useNavigate()
   const [formData, setFormData] = useState([])
+  const [show, setShow] = useState(true)
   const User = async () => {
     return await axios.get('http://localhost:3000/user')
       .then(res => setFormData(res.data))
@@ -68,9 +69,9 @@ const Login = () => {
           <div className='row justify-content-center'>
             <div className='col-sm-12 col-md-12 col-lg-12'>
               <div className="user-form-logo">
-                <a href='/'>
+                <NavLink to={'/'}>
                   <img src="https://hstatic.net/349/1000150349/1000203344/logo.png?v=28" alt="logo" />
-                </a>
+                </NavLink>
               </div>
             </div>
             <div className='container'>
@@ -91,9 +92,9 @@ const Login = () => {
                         <p className="errorMsg"> {formik.errors.email} </p>
                       )}
                     </div>
-                    <div className='form-group'>
+                    <div className='form-group input-password'>
                       <input
-                        type="password"
+                        type={show ? "password" : "text"}
                         id="password"
                         name="password"
                         value={formik.values.password}
@@ -101,6 +102,7 @@ const Login = () => {
                         placeholder="Mật khẩu"
                         className='form-control'
                       />
+                      <i className={show ? "fa-solid fa-eye-slash icon-eye" : "fa-solid fa-eye icon-eye"} onClick={() => setShow(!show)}></i>
                       {formik.errors.password && (
                         <p className="errorMsg"> {formik.errors.password} </p>
                       )}
@@ -108,7 +110,9 @@ const Login = () => {
                     <div className="form-button">
                       <button type="submit">login</button>
                       <p>Bạn có tài khoản chưa?
-                        <a href='login'>Đăng kí</a>
+                        <NavLink to={'/login'}>
+                          Đăng kí
+                        </NavLink>
                       </p>
                     </div>
                   </form>

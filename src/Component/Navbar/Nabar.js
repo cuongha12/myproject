@@ -1,10 +1,21 @@
-import React, { useLayoutEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
+import axios from 'axios';
+import React, { useEffect, useLayoutEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { createSearch } from '../../Redux/actions/search';
+import SearchReducer from '../../Redux/reducers/search';
 import "../Navbar/Nabar.css"
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false)
     const [search, setSearch] = useState('')
+    const [product, setProduct] = useState([])
+    const productSearch = async () => {
+        return await axios.get('http://localhost:3000/product')
+            .then(res => setProduct(res.data))
+    }
+    useEffect(() => {
+        productSearch()
+    })
     let navigate = useNavigate()
     useLayoutEffect(() => {
         const handleScroll = () => {
@@ -16,13 +27,20 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll)
         }
     }, [])
+    const dispatch = useDispatch()
     const handSearch = (e) => {
         if (search === "") {
             e.preventDefault()
-            
+
         } else {
+            e.preventDefault()
             navigate(`search/${search}`)
             setSearch('')
+            const obj = {
+                array: product,
+                value: search
+            }
+            dispatch(createSearch(obj))
         }
     }
     return (

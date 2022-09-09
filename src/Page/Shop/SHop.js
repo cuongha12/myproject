@@ -2,7 +2,7 @@ import { type } from '@testing-library/user-event/dist/type'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import { addToCart } from '../../Redux/actions/cart'
 import "../Shop/Shop.css"
@@ -181,7 +181,7 @@ const SHop = () => {
           <div className="row main-header">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5  ">
               <ol className="breadcrumb breadcrumb-arrows">
-                <li><a href='/'>Trang chủ</a></li>
+                <li><NavLink to={'/'}>Trang chủ</NavLink></li>
                 <li><a >Danh mục</a></li>
                 <li ><span>Tất cả sản phẩm</span></li>
               </ol>

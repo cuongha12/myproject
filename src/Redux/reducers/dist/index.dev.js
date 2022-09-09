@@ -9,13 +9,16 @@ var _redux = require("redux");
 
 var _cart = _interopRequireDefault(require("./cart"));
 
+var _search = _interopRequireDefault(require("./search"));
+
 var _user = _interopRequireDefault(require("./user"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var allReducer = (0, _redux.combineReducers)({
   cart: _cart["default"],
-  user: _user["default"]
+  user: _user["default"],
+  text: _search["default"]
 });
 var _default = allReducer;
 exports["default"] = _default;

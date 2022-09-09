@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import "../Form/Form.css"
 import * as Yup from "yup";
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 import { useDispatch } from 'react-redux';
 import { createUser } from '../../Redux/actions/user';
@@ -85,9 +85,9 @@ const Form = () => {
           <div className='row justify-content-center'>
             <div className='col-sm-12 col-md-12 col-lg-12'>
               <div className="user-form-logo">
-                <a href='/'>
+                <NavLink to={'/'}>
                   <img src="https://hstatic.net/349/1000150349/1000203344/logo.png?v=28" alt="logo" />
-                </a>
+                </NavLink>
               </div>
             </div>
             <div className='container'>
@@ -170,7 +170,9 @@ const Form = () => {
                     <div className="form-button">
                       <button type="submit">login</button>
                       <p>Bạn có tài khoản chưa?
-                        <a href='signup'>Đăng nhập</a>
+                        <NavLink to={'/signup'}>
+                          Đăng nhập
+                        </NavLink>
                       </p>
                     </div>
                   </form>

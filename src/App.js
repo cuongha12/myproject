@@ -32,10 +32,10 @@ function App() {
             <Route path='searchs/' element={<Searchs />} />
             <Route path='/cart/' element={<Cart />} />
           </Route>
-          <Route path='login' element={<Form />} >
+          <Route path='/login/' element={<Form />} >
             
           </Route>
-          <Route path='signup' element={<Login />} >
+          <Route path='/signup/' element={<Login />} >
             
           </Route>
         </Routes>

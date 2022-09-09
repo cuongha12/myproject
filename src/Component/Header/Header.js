@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { RemoveUserToLocalStorage } from '../../Redux/actions/user'
 import { removeFromCart } from '../../Redux/actions/cart'
 import "../Header/Header.component.css"
+import SearchReducer from '../../Redux/reducers/search'
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false)
@@ -22,20 +23,24 @@ const Header = () => {
         }
     }, [])
     let navigate = useNavigate()
+    const dispatch = useDispatch()
     const handSearch = (e) => {
         if (search === "") {
             e.preventDefault()
         } else {
+            e.preventDefault()
             navigate(`search/${search}`)
             setSearch('')
+            dispatch(SearchReducer(search))
         }
     }
     const cartProduct = useSelector(state => state.cart)
     const userPage = useSelector(e => e.user)
-    const dispatch = useDispatch()
+
     const handLogout = () => {
         dispatch(RemoveUserToLocalStorage(null))
         dispatch(removeFromCart([]))
+        navigate('/signup')
     }
     return (
         <>
@@ -63,9 +68,9 @@ const Header = () => {
                             <div className='row'>
                                 <div className='col-lg-12 col-md-12 col-sm-7 col-xs-7'>
                                     <h1>
-                                        <a href="/">
-                                            <img src="//hstatic.net/349/1000150349/1000203344/logo.png?v=28" alt="default-fresh-food" className="img-responsive logoimg" />
-                                        </a>
+                                        <NavLink to={'/'}>
+                                            <img src="https://hstatic.net/349/1000150349/1000203344/logo.png?v=28" alt="default-fresh-food" className="img-responsive logoimg" />
+                                        </NavLink>
                                     </h1>
                                 </div>
                             </div>
@@ -78,10 +83,14 @@ const Header = () => {
                                     </div>
                                     <ul>
                                         <li >
-                                            <a href="/signup">Đăng nhập</a>
+                                            <NavLink to={'signup'}>
+                                                Đăng nhập
+                                            </NavLink>
                                         </li>
                                         <li >
-                                            <a href="/login">Đăng ký</a>
+                                            <NavLink to={'login'}>
+                                                Đăng kí
+                                            </NavLink>
                                         </li>
                                     </ul>
                                 </div>) : (<div className="user d-flex align-items-ct">
@@ -96,13 +105,13 @@ const Header = () => {
                                     </ul>
                                 </div>)}
                                 <div className='cart-info hidden-xs'>
-                                    <a className="cart-link" href="/cart">
+                                    <NavLink className="cart-link" to={'cart'}>
                                         <span className="icon-cart">
                                         </span>
                                         <div className="cart-number">
                                             {cartProduct.cartNumber}
                                         </div>
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -135,15 +144,15 @@ const Header = () => {
                                     <span className="icon-bar"></span>
                                 </button>
                                 <div className="logo evo-flexitem evo-flexitem-fill">
-                                    <a href="/" className="logo-wrapper" >
+                                    <NavLink to={'/'} className="logo-wrapper" >
                                         <img src="https://hstatic.net/349/1000150349/1000203344/logo.png?v=28" className="img-responsive center-block" />
-                                    </a>
+                                    </NavLink>
                                 </div>
                                 <div className="evo-flexitem evo-flexitem-fill visible-sm visible-xs">
-                                    <a className="cart " href="/cart">
+                                    <NavLink to={'cart'} className="cart ">
                                         <i className="fa fa-cart-arrow-down"></i>
-                                        <span className="count_item_pr">   {cartProduct.cartNumber}</span>
-                                    </a >
+                                        <span className="count_item_pr">{cartProduct.cartNumber}</span>
+                                    </NavLink>
                                     <a className="site-header-search cart" title="Tìm kiếm" onClick={() => setShow(true)}>
                                         <i className="fa fa-search" aria-hidden="true"></i>
                                     </a>
@@ -190,8 +199,8 @@ const Header = () => {
                             </ul>
                             {
                                 userPage.userId === null ? (<ul className='header-login'>
-                                    <li><a className="reg" title="Đăng ký" href='/login'>Đăng ký</a></li>
-                                    <li><a className="log" title="Đăng nhập" href='/signup'>Đăng nhập</a></li>
+                                    <li><NavLink to={'login'} className={'reg'} >Đăng ký</NavLink></li>
+                                    <li><NavLink to={'signup'} className={'reg'} >Đăng nhập</NavLink></li>
                                 </ul>) : (<ul className='header-login'>
                                     <li><a onClick={handLogout} className="log" title="Đăng xuất"><i className="fa-solid fa-right-from-bracket"></i>Đăng xuất</a></li>
                                 </ul>)
