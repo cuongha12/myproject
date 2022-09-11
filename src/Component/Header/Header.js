@@ -113,7 +113,9 @@ const Header = () => {
                                     </div>
                                     <ul>
                                         <li >
-                                            <a>Xem hồ sơ</a>
+                                            <NavLink to={'profile'}>
+                                                Hồ sơ
+                                            </NavLink>
                                         </li>
                                         <li >
                                             <a onClick={handLogout}>Đăng xuất</a>

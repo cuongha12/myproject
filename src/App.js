@@ -16,6 +16,7 @@ import 'antd/dist/antd.css'
 import Cart from './Page/Cart/Cart';
 import { useSelector } from 'react-redux';
 import ProfileUser from './Page/ProfileUser/ProfileUser';
+import Edit from './Page/Edit/Edit';
 function App() {
 
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path='/detail/:item/' element={<Detail />} />
             <Route path='/cart/' element={<Cart />} />
             <Route path='/profile/' element={<ProfileUser />} />
+            <Route path='/edit/:id' element={<Edit/>}/>
           </Route>
           <Route path='/login/' element={<Form />} >
           </Route>

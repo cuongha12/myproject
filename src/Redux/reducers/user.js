@@ -2,7 +2,8 @@
 const itemUser = JSON.parse(localStorage.getItem('user') || null)
 const initState = {
     userId: itemUser,
-    userPost: []
+    userPost: [],
+    edit: {}
 }
 const UserReducer = (state = initState, action) => {
     switch (action.type) {
@@ -12,9 +13,13 @@ const UserReducer = (state = initState, action) => {
             localStorage.setItem('user', JSON.stringify(action.playload))
             return { ...state, userId: action.playload }
         case "REMOVE_USER":
-            console.log(action.playload);
+
             localStorage.setItem('user', JSON.stringify(action.playload))
             return { ...state, userId: action.playload }
+        case "EDIT_USER":
+        // return {
+        //     ...state, edit: action.playload[0]
+        // }
         default:
             return state;
     }

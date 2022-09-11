@@ -18,3 +18,9 @@ export const RemoveUserToLocalStorage = (user) => {
         playload: user 
     }
 }
+export const EditUser = (user) => {
+    return {
+        type: "EDIT_USER",
+        playload: user 
+    }
+}
