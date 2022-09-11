@@ -11,10 +11,11 @@ import Form from './Page/Form/Form';
 import Search from './Page/Search/Search';
 import Detail from './Page/Detail/Detail';
 import 'antd/dist/antd.css'
-import Searchs from './Page/Searchs/Searchs';
+
 
 import Cart from './Page/Cart/Cart';
 import { useSelector } from 'react-redux';
+import ProfileUser from './Page/ProfileUser/ProfileUser';
 function App() {
 
   return (
@@ -29,8 +30,8 @@ function App() {
             <Route path='/contact/' element={<Contact />} />
             <Route path='/search/:id/' element={<Search />} />
             <Route path='/detail/:item/' element={<Detail />} />
-            <Route path='searchs/' element={<Searchs />} />
             <Route path='/cart/' element={<Cart />} />
+            <Route path='/profile/' element={<ProfileUser />} />
           </Route>
           <Route path='/login/' element={<Form />} >
           </Route>

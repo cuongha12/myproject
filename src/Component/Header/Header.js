@@ -109,9 +109,12 @@ const Header = () => {
                                     </ul>
                                 </div>) : (<div className="user d-flex align-items-ct">
                                     <div className="user-logo">
-                                        <img src="https://mcdn.nhanh.vn/store/18131/ps/20171117/22228659_1958158637798279_6481759436594791816_n_552x640.jpg" alt="" />
+                                        <img src="https://i.picsum.photos/id/242/40/40.jpg?hmac=Sg3qpj7me-RcpNVcBtyspyGRFaWCKZgn65btG8-CH4g" alt="" />
                                     </div>
                                     <ul>
+                                        <li >
+                                            <a>Xem hồ sơ</a>
+                                        </li>
                                         <li >
                                             <a onClick={handLogout}>Đăng xuất</a>
                                         </li>
@@ -191,7 +194,7 @@ const Header = () => {
                                     </a>
                                 </li>) : (<li className="nav-item ">
                                     <a className="nav-link " >
-                                        <img src='https://mcdn.nhanh.vn/store/18131/ps/20171117/22228659_1958158637798279_6481759436594791816_n_552x640.jpg' className='img-user' />
+                                        <img src='https://i.picsum.photos/id/242/40/40.jpg?hmac=Sg3qpj7me-RcpNVcBtyspyGRFaWCKZgn65btG8-CH4g' className='img-user' />
                                     </a>
                                 </li>)}
                                 <li className='nav-item has-childs'>
