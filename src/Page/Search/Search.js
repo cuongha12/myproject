@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
+import { toast, ToastContainer } from 'react-toastify'
 import { addToCart } from '../../Redux/actions/cart'
 import "../Search/Search.css"
 const Search = () => {
@@ -130,12 +131,34 @@ const Search = () => {
                                                         if (user.userId === null) {
                                                             navigate('/signup')
                                                         } else {
+                                                            toast.success('Thêm sản phẩm thành công', {
+                                                                position: "top-right",
+                                                                autoClose: 100,
+                                                                hideProgressBar: false,
+                                                                closeOnClick: true,
+                                                                pauseOnHover: true,
+                                                                draggable: true,
+                                                                progress: undefined,
+                                                            });
                                                             dispatch(addToCart(e))
                                                         }
                                                     }}>
                                                         <i className="fa fa-shopping-bag" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
+                                                <ToastContainer
+                                                    position="top-right"
+                                                    autoClose={100}
+                                                    hideProgressBar={false}
+                                                    newestOnTop={false}
+                                                    closeOnClick
+                                                    rtl={false}
+                                                    pauseOnFocusLoss
+                                                    draggable
+                                                    pauseOnHover
+                                                />
+                                                {/* Same as */}
+                                                <ToastContainer />
                                                 <div className="view-details">
                                                     <a className="view-detail" onClick={(event) => {
                                                         event.preventDefault()

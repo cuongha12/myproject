@@ -1,0 +1,24 @@
+ .header-page h1 {
+    line-height: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 30px 0 20px 0px;
+}
+.about-heading2-home {
+    font-size: 42px;
+    line-height: 51px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+h3.about-heading2-home span {
+    color: #28b241;
+}
+.about-us p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+}
