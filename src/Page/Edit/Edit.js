@@ -4,32 +4,30 @@ import React, { useEffect, useState } from 'react'
 import "../Edit/Edit.css";
 import * as Yup from "yup";
 import swal from 'sweetalert';
-import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { createUser, EditUser } from '../../Redux/actions/user'
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
 const Edit = () => {
     const { id } = useParams()
-    const [user, setUser] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        password: '',
-    })
-    const Profile = async () => {
+    const userData = useSelector(e => e.user)
+    const [user, setUser] = useState(userData.userId)
+    const [product, setProduct] = useState([])
+    const Profiles = async () => {
         return await axios.get(`https://orangic-server.herokuapp.com/user/${id}`)
-            .then(res => setUser(res.data))
+            .then(res => setProduct(res.data))
     }
     useEffect(() => {
-        Profile()
+        Profiles()
     }, [])
-    const editUser = useSelector(e => e.user)
+    const dispatch = useDispatch()
     const [show, setShow] = useState(true)
     const [shows, setShows] = useState(true)
     const formik = useFormik({
         initialValues: {
-            email: editUser.edit.email,
-            name: editUser.edit.name,
-            phone: editUser.edit.phone,
-            password: editUser.edit.password,
+            email: user.email,
+            name: user.name,
+            phone: user.phone,
+            password: user.password,
             confirmedPassword: "",
         },
         validationSchema: Yup.object({
@@ -58,16 +56,26 @@ const Edit = () => {
                     "Phải là một số điện thoại hợp lệ"
                 ),
         }),
-        onSubmit: async (values) => {
-            swal({
-                title: "Đăng kí tài khoản thành công!",
-                icon: "success",
-                button: "Ok!",
-            });
 
-        },
     });
-    
+    let navigate = useNavigate()
+    const updateData = {
+        name: formik.values.name,
+        email: formik.values.email,
+        password: formik.values.password,
+        confirmedPassword: formik.values.confirmedPassword,
+        phone: formik.values.phone,
+        id: user.id
+    }
+
+    const handEdit = async (e) => {
+        e.preventDefault()
+        axios.put(`https://orangic-server.herokuapp.com/user/${id}`, updateData)
+            .then(navigate('/profile'))
+        dispatch(EditUser(product))
+        localStorage.setItem('user', JSON.stringify(updateData))
+    }
+
     return (
         <div className='bodys'>
             <div className="container-xl px-4 mt-4">
@@ -87,7 +95,7 @@ const Edit = () => {
                             <div className="card mb-4">
                                 <div className="card-header">Chi tiết tài khoản</div>
                                 <div className="card-body">
-                                    <form className='user-form' onSubmit={formik.handleSubmit}>
+                                    <form className='user-form' onSubmit={(e) => handEdit(e)}>
                                         <div className='form-group'>
                                             <label className="small mb-1" >Tên đăng nhập</label>
                                             <input

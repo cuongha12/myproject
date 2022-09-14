@@ -7,6 +7,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 import { useDispatch } from 'react-redux';
 import { createUser } from '../../Redux/actions/user';
+import { v4 as uuidv4 } from 'uuid';
 const Form = () => {
   let navigate = useNavigate();
   const dispatch = useDispatch()
@@ -27,6 +28,7 @@ const Form = () => {
       phone: "",
       password: "",
       confirmedPassword: "",
+      iduser:uuidv4()
     },
     validationSchema: Yup.object({
       name: Yup.string()

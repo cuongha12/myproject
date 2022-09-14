@@ -15,7 +15,7 @@ var itemUser = JSON.parse(localStorage.getItem('user') || null);
 var initState = {
   userId: itemUser,
   userPost: [],
-  edit: {}
+  edit: []
 };
 
 var UserReducer = function UserReducer() {
@@ -40,9 +40,10 @@ var UserReducer = function UserReducer() {
         userId: action.playload
       });
 
-    case "EDIT_USER": // return {
-    //     ...state, edit: action.playload[0]
-    // }
+    case "EDIT_USER":
+      return _objectSpread({}, state, {
+        edit: action.playload
+      });
 
     default:
       return state;

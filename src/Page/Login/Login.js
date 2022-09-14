@@ -7,7 +7,7 @@ import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveUserToLocalStorage } from '../../Redux/actions/user';
 import swal from 'sweetalert';
-
+import { v4 as uuidv4 } from 'uuid';
 const Login = () => {
   let navigate = useNavigate()
   const [formData, setFormData] = useState([])
@@ -25,6 +25,7 @@ const Login = () => {
       initialValues: {
         email: "",
         password: "",
+        iduser: formData.iduser,
       },
     });
   const userItems = useSelector(state => state.user)
@@ -32,6 +33,7 @@ const Login = () => {
   const handSubmit = (e) => {
     e.preventDefault()
     const userId = {
+      iduser: uuidv4(),
       user: formik.values.email,
       password: formik.values.password
     }
@@ -51,17 +53,22 @@ const Login = () => {
       });
     }
     else if (!!user) {
-      localStorage.setItem('user', JSON.stringify(userId))
-      dispatch(saveUserToLocalStorage(userId))
+
       swal({
         title: "Đăng nhập  thành công!",
         icon: "success",
         button: "Ok!",
       }
       );
+      const check = formData.filter(e => {
+        return e.email.includes(formik.values.email) || e.phone.includes(formik.values.email)
+      })
+      localStorage.setItem('user', JSON.stringify(check[0]))
+      dispatch(saveUserToLocalStorage(check[0]))
       navigate('/')
     }
   }
+
   return (
     <div className='form-login'>
       <div className='user-form-part'>

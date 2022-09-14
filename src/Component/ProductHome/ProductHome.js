@@ -23,11 +23,8 @@ const ProductHome = () => {
     const cartItems = useSelector(state => state.cart)
     const dispatch = useDispatch()
     const user = useSelector(e => e.user)
-
-
     return (
         <section className='clearfix container'>
-
             <div className='row'>
                 <div className='col-md-12 col-sm-12 col-xs-12'>
                     <div className=''>

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { EditUser } from '../../Redux/actions/user'
 import "../ProfileUser/ProfileUser.css"
@@ -16,14 +16,18 @@ const ProfileUser = () => {
     }, [])
     const dispatch = useDispatch()
     let navigate = useNavigate()
-    const userId = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : {};
+    const test = useSelector(e => e.user)
+    // const check = user.filter(e => {
+    //     return e.iduser.includes(userId.iduser)
+    // })
+    // dispatch(EditUser(check))
     const check = user.filter(e => {
-        return e.email.includes(userId.user)
+        return e.id === test.userId.id
     })
-    dispatch(EditUser(check))
     const handUser = (e) => {
         navigate(`/edit/${e.id}`)
     }
+    console.log(test.edit);
     return (
         <div className='body'>
             <div className="page-content page-container" id="page-content">
@@ -73,6 +77,50 @@ const ProfileUser = () => {
                                 </div>
                             ))
                         }
+                        {/* {
+                            checks.map(e => (
+                                <div className="col-xl-6 col-md-12 col-sm-12 res-pro" key={e.id}>
+                                    <div className="card user-card-full">
+                                        <div className="row m-l-0 m-r-0">
+                                            <div className="col-sm-4 bg-c-lite-green user-profile">
+                                                <div className="card-block text-center text-white">
+                                                    <div className="m-b-25">
+                                                        <img src="https://img.icons8.com/bubbles/100/000000/user.png" className="img-radius" alt="User-Profile-Image" />
+                                                    </div>
+                                                    <h6 className="f-w-600">Tài khoản của tôi</h6>
+                                                    <i className="fa-regular fa-pen-to-square profile" onClick={() => handUser(e)}></i>
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-8" key={e.id}>
+                                                <div className="card-block">
+                                                    <h6 className="m-b-20 p-b-5 b-b-default f-w-600">Thông tin cá nhân</h6>
+                                                    <div className="row">
+                                                        <div className="col-sm-5">
+                                                            <p className="m-b-10 f-w-600">Tên tài khoản</p>
+                                                            <h6 className="text-muted f-w-400">{e.name}</h6>
+                                                        </div>
+                                                        <div className="col-sm-7">
+                                                            <p className="m-b-10 f-w-600">Email</p>
+                                                            <h6 className="text-muted f-w-400">{e.email}</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-sm-5">
+                                                            <p className="m-b-10 f-w-600">Mật khẩu</p>
+                                                            <h6 className="text-muted f-w-400">{e.password}</h6>
+                                                        </div>
+                                                        <div className="col-sm-7">
+                                                            <p className="m-b-10 f-w-600">Phone</p>
+                                                            <h6 className="text-muted f-w-400">{e.phone}</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        } */}
                     </div>
                 </div>
             </div>
