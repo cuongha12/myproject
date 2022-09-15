@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import "../Edit/Edit.css";
 import * as Yup from "yup";
 import swal from 'sweetalert';
-import { createUser, EditUser } from '../../Redux/actions/user'
+import { createUser, EditUser, saveUserToLocalStorage } from '../../Redux/actions/user'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 const Edit = () => {
@@ -67,15 +67,13 @@ const Edit = () => {
         phone: formik.values.phone,
         id: user.id
     }
-
     const handEdit = async (e) => {
         e.preventDefault()
         axios.put(`https://orangic-server.herokuapp.com/user/${id}`, updateData)
             .then(navigate('/profile'))
-        dispatch(EditUser(product))
+        dispatch(saveUserToLocalStorage(updateData))
         localStorage.setItem('user', JSON.stringify(updateData))
     }
-
     return (
         <div className='bodys'>
             <div className="container-xl px-4 mt-4">

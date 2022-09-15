@@ -195,9 +195,12 @@ const Header = () => {
                                         <i className="fa-solid fa-circle-user"></i>
                                     </a>
                                 </li>) : (<li className="nav-item ">
-                                    <a className="nav-link " >
-                                        <img src='https://i.picsum.photos/id/242/40/40.jpg?hmac=Sg3qpj7me-RcpNVcBtyspyGRFaWCKZgn65btG8-CH4g' className='img-user' />
-                                    </a>
+                                    <div className='vct'>
+                                        <a className="nav-link " >
+                                            <img src='https://i.picsum.photos/id/242/40/40.jpg?hmac=Sg3qpj7me-RcpNVcBtyspyGRFaWCKZgn65btG8-CH4g' className='img-user' />
+                                        </a>
+                                        <NavLink className={'vcta'} to={'profile'} onClick={() => setMenu(false)}>Hồ sơ</NavLink>
+                                    </div>
                                 </li>)}
                                 <li className='nav-item has-childs'>
                                     <NavLink to={'/'} className={({ isActive }) => (isActive ? ' active' : '')} onClick={() => setMenu(false)}>Trang chủ</NavLink>

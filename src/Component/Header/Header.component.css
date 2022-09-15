@@ -213,6 +213,18 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .vct{
+        display: flex;
+    }
+    .vcta {
+        font-size: 20px !important;
+        padding: 1rem 1rem;
+        color: #1c1c1c;
+    }
+    .vcta:hover{
+        color: #28b241;
+
+    }
     .img-user {
         width: 42px;
         height: 42px;
