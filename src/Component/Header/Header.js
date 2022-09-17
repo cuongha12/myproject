@@ -196,7 +196,7 @@ const Header = () => {
                                     </a>
                                 </li>) : (<li className="nav-item ">
                                     <div className='vct' >
-                                        <NavLink className="nav-link" to={'profile'}>
+                                        <NavLink className="nav-link" to={'profile'} onClick={() => setMenu(false)}>
                                             <img src='https://i.picsum.photos/id/242/40/40.jpg?hmac=Sg3qpj7me-RcpNVcBtyspyGRFaWCKZgn65btG8-CH4g' className='img-user' />
                                         </NavLink >
                                         <NavLink className={'vcta'} to={'profile'} onClick={() => setMenu(false)}>Hồ sơ</NavLink>
