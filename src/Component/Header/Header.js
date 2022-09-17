@@ -195,10 +195,10 @@ const Header = () => {
                                         <i className="fa-solid fa-circle-user"></i>
                                     </a>
                                 </li>) : (<li className="nav-item ">
-                                    <div className='vct'>
-                                        <a className="nav-link " >
+                                    <div className='vct' >
+                                        <NavLink className="nav-link" to={'profile'}>
                                             <img src='https://i.picsum.photos/id/242/40/40.jpg?hmac=Sg3qpj7me-RcpNVcBtyspyGRFaWCKZgn65btG8-CH4g' className='img-user' />
-                                        </a>
+                                        </NavLink >
                                         <NavLink className={'vcta'} to={'profile'} onClick={() => setMenu(false)}>Hồ sơ</NavLink>
                                     </div>
                                 </li>)}

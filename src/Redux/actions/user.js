@@ -24,3 +24,9 @@ export const EditUser = (user) => {
         playload: user 
     }
 }
+export const EditUsers = (user) => {
+    return {
+        type: "EDIT_USERS",
+        playload: user 
+    }
+}

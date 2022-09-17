@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import "../Edit/Edit.css";
 import * as Yup from "yup";
 import swal from 'sweetalert';
-import { createUser, EditUser, saveUserToLocalStorage } from '../../Redux/actions/user'
+import { createUser, EditUser, EditUsers, saveUserToLocalStorage } from '../../Redux/actions/user'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 const Edit = () => {
@@ -16,8 +16,10 @@ const Edit = () => {
         return await axios.get(`https://orangic-server.herokuapp.com/user/${id}`)
             .then(res => setProduct(res.data))
     }
+    
     useEffect(() => {
         Profiles()
+        
     }, [])
     const dispatch = useDispatch()
     const [show, setShow] = useState(true)
@@ -73,6 +75,11 @@ const Edit = () => {
             .then(navigate('/profile'))
         dispatch(saveUserToLocalStorage(updateData))
         localStorage.setItem('user', JSON.stringify(updateData))
+        swal({
+            title: "Sửa tài khoản thành công!",
+            icon: "success",
+            button: "Ok!",
+          });
     }
     return (
         <div className='bodys'>

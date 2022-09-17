@@ -27,7 +27,6 @@ const ProfileUser = () => {
     const handUser = (e) => {
         navigate(`/edit/${e}`)
     }
-   
     return (
         <div className='body'>
             <div className="page-content page-container" id="page-content">

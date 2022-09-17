@@ -5,6 +5,7 @@ import swal from 'sweetalert';
 
 import '../Cart/Cart.css'
 import { NavLink, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 const Cart = () => {
     const dispatch = useDispatch()
     const cartProduct = useSelector(e => e.cart)
@@ -65,7 +66,6 @@ const Cart = () => {
     const itemsPrice = products.cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
     var ship = 50000
     const shipPrice = itemsPrice + ship;
-
     return (
         <div>
             <div className="wrap-breadcrumb">

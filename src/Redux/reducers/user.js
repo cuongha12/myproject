@@ -3,7 +3,8 @@ const itemUser = JSON.parse(localStorage.getItem('user') || null)
 const initState = {
     userId: itemUser,
     userPost: [],
-    edit: []
+    edit: [],
+    userPosts: [],
 }
 const UserReducer = (state = initState, action) => {
     switch (action.type) {
@@ -17,6 +18,9 @@ const UserReducer = (state = initState, action) => {
             return { ...state, userId: action.playload }
         case "EDIT_USER":
             return { ...state, edit: action.playload }
+        case "EDIT_USERS":
+
+            return { ...state, userPosts: action.playload }
         default:
             return state;
     }

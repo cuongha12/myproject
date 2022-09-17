@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.EditUser = exports.RemoveUserToLocalStorage = exports.saveUserToLocalStorage = exports.createUser = void 0;
+exports.EditUsers = exports.EditUser = exports.RemoveUserToLocalStorage = exports.saveUserToLocalStorage = exports.createUser = void 0;
 
 var createUser = function createUser(user) {
   return {
@@ -40,3 +40,12 @@ var EditUser = function EditUser(user) {
 };
 
 exports.EditUser = EditUser;
+
+var EditUsers = function EditUsers(user) {
+  return {
+    type: "EDIT_USERS",
+    playload: user
+  };
+};
+
+exports.EditUsers = EditUsers;
