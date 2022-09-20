@@ -141,14 +141,14 @@ const Cart = () => {
                                                                         </button>
                                                                     </div>
                                                                 </td>
-                                                                <td className="price">{((e.price) * (e.quantity)).toLocaleString()}₫</td>
+                                                                <td className="price">{parseFloat((e.price) * (e.quantity)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}₫</td>
                                                                 <td className="remove">
                                                                     <a className="cart" onClick={() => hanDele(e)}>
                                                                         <i className="fa-solid fa-xmark"></i>
                                                                     </a>
                                                                 </td>
                                                             </tr>
-
+                                                            {/* parseFloat(product.price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") */}
                                                         </tbody>
                                                     ))
                                                 }
@@ -159,7 +159,7 @@ const Cart = () => {
                                                         <td className="text-center"><b>Tạm tính:</b></td>
                                                         <td className="price">
                                                             <span className="total">
-                                                                <strong>{itemsPrice.toLocaleString()}₫</strong>
+                                                                <strong>{(itemsPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))}₫</strong>
                                                             </span>
                                                         </td>
                                                         <td>&nbsp;</td>
@@ -170,7 +170,7 @@ const Cart = () => {
                                                         <td className="text-center "><b>Phí ship:</b></td>
                                                         <td className="price ">
                                                             <span className="total ">
-                                                                <strong>{ship.toLocaleString()}₫</strong>
+                                                                <strong>{ship.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}₫</strong>
                                                             </span>
                                                         </td>
                                                         <td>&nbsp;</td>
@@ -181,7 +181,7 @@ const Cart = () => {
                                                         <td className="text-center  "><b>Tổng Cộng:</b></td>
                                                         <td className="price">
                                                             <span className="total">
-                                                                <strong>{shipPrice.toLocaleString()}₫</strong>
+                                                                <strong>{shipPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}₫</strong>
                                                             </span>
                                                         </td>
                                                         <td >&nbsp;</td>

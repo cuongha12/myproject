@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { RemoveUserToLocalStorage } from '../../Redux/actions/user'
@@ -21,16 +21,42 @@ const Header = () => {
     useEffect(() => {
         productSearch()
     })
+    let refHeader = useRef()
     useLayoutEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 120)
-
+            setScrolled(e => {
+                if (window.scrollY > e + 200) {
+                    refHeader.current.classList.remove("stickys")
+                    return window.scrollY
+                } else if (window.scrollY < e - 100) {
+                    refHeader.current.classList.add("stickys")
+                    return window.scrollY
+                } else if (window.scrollY < 140) {
+                    refHeader.current.classList.remove("stickys")
+                    return window.scrollY
+                }
+                return e
+            })
         }
         window.addEventListener("scroll", handleScroll)
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
     }, [])
+    // useEffect(() => {
+    //     window.addEventListener('scroll', _ => {
+    //         setscrollH(prev => {
+    //             if (window.scrollY > prev + 100) {
+    //                 refHeader.current.style.position = 'relative'
+    //                 return window.scrollY
+    //             } else if (window.scrollY < prev - 100) {
+    //                 refHeader.current.style.position = 'fixed'
+    //                 return window.scrollY
+    //             }
+    //             return prev
+    //         })
+    //     })
+    // }, [])
     let navigate = useNavigate()
     const dispatch = useDispatch()
     const handSearch = (e) => {
@@ -56,6 +82,7 @@ const Header = () => {
         dispatch(removeFromCart([]))
         navigate('/signup')
     }
+
     return (
         <>
             <header className='header bkg hidden-sm hidden-xs none'>
@@ -137,7 +164,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <div className={scrolled ? 'stickys nones ' : "nones"}>
+            <div className={ "nones"} ref={refHeader}>
                 <div className=''>
                     <div className={show ? 'evo-search-bar show-search ' : "evo-search-bar "}>
                         <form className="has-validation-callback" onSubmit={handSearch}>

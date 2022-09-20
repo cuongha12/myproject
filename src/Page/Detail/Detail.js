@@ -90,9 +90,9 @@ const Detail = () => {
                                     <Rate disabled defaultValue={5} />
                                 </div>
                                 <h3 className="details-price">
-                                    <del className={product.sale ? "" : "sale"}>{parseFloat(product.prices).toLocaleString()}đ</del>
+                                    <del className={product.sale ? "" : "sale"}>{parseFloat(product.prices).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}đ</del>
                                     <span >
-                                        {parseFloat(product.price).toLocaleString()}đ
+                                        {parseFloat(product.price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}đ
                                     </span>
                                 </h3>
                                 <div className='product-action'>

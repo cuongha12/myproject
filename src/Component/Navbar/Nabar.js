@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { createSearch } from '../../Redux/actions/search';
@@ -17,9 +17,27 @@ const Navbar = () => {
         productSearch()
     })
     let navigate = useNavigate()
+    let refHeader = useRef()
     useLayoutEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 120)
+            setScrolled(e => {
+                if (window.scrollY > e + 200) {
+                    refHeader.current.classList.remove("sticky")
+                   
+                    return window.scrollY
+
+                } else if (window.scrollY < e - 100) {
+                    refHeader.current.classList.add("sticky")
+                    refHeader.current.classList.remove("container")
+                
+                    return window.scrollY
+                } else if (window.scrollY < 140) {
+                    refHeader.current.classList.remove("sticky")
+                    refHeader.current.classList.add("container")
+                    return window.scrollY
+                }
+                return e
+            })
 
         }
         window.addEventListener("scroll", handleScroll)
@@ -27,9 +45,23 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll)
         }
     }, [])
+    // useEffect(() => {
+    //     window.addEventListener('scroll', _ => {
+    //         setscrollH(prev => {
+    //             if (window.scrollY > prev + 100) {
+    //                 refHeader.current.style.position = 'relative'
+    //                 return window.scrollY
+    //             } else if (window.scrollY < prev - 100) {
+    //                 refHeader.current.style.position = 'fixed'
+    //                 return window.scrollY
+    //             }
+    //             return prev
+    //         })
+    //     })
+    // }, [])
     const dispatch = useDispatch()
     const handSearch = (e) => {
-        if (search === "" ) {
+        if (search === "") {
             e.preventDefault()
 
         } else {
@@ -44,8 +76,8 @@ const Navbar = () => {
         }
     }
     return (
-        <nav className={'navbar-main  navbar-default cl-pri none'}>
-            <div className={scrolled ? ' sticky ' : '  container nav-wrapper check_nav'}>
+        <nav className={'navbar-main  navbar-default cl-pri none'} >
+            <div className={' container nav-wrapper check_nav'} ref={refHeader}>
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className='navbar-collapse nav-ba'>
