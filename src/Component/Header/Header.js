@@ -164,7 +164,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <div className={ "nones"} ref={refHeader}>
+            <div className={"nones"} ref={refHeader}>
                 <div className=''>
                     <div className={show ? 'evo-search-bar show-search ' : "evo-search-bar "}>
                         <form className="has-validation-callback" onSubmit={handSearch}>
@@ -217,9 +217,12 @@ const Header = () => {
                     <div className='row'>
                         <div className='col-md-12 col-lg-12'>
                             <ul id="nav" className='nav'>
-                                {userPage.userId === null ? (<li className="nav-item ">
+                                {userPage.userId === null ? (<li className="nav-item menu-user">
                                     <a className="nav-link " >
                                         <i className="fa-solid fa-circle-user"></i>
+                                    </a>
+                                    <a className="nav-link " onClick={() => setMenu(false)}>
+                                        <i class="fa-solid fa-xmark"></i>
                                     </a>
                                 </li>) : (<li className="nav-item ">
                                     <div className='vct' >

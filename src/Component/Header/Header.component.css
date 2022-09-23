@@ -213,6 +213,10 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .menu-user{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
     .vct{
         display: flex;
     }
