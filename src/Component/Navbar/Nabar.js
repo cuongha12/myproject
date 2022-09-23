@@ -20,24 +20,25 @@ const Navbar = () => {
     let refHeader = useRef()
     useLayoutEffect(() => {
         const handleScroll = () => {
-            setScrolled(e => {
-                if (window.scrollY > e + 200) {
-                    refHeader.current.classList.remove("sticky")
+            // setScrolled(e => {
+            //     if (window.scrollY > e + 200) {
+            //         refHeader.current.classList.remove("sticky")
                    
-                    return window.scrollY
+            //         return window.scrollY
 
-                } else if (window.scrollY < e - 100) {
-                    refHeader.current.classList.add("sticky")
-                    refHeader.current.classList.remove("container")
+            //     } else if (window.scrollY < e - 100) {
+            //         refHeader.current.classList.add("sticky")
+            //         refHeader.current.classList.remove("container")
                 
-                    return window.scrollY
-                } else if (window.scrollY < 140) {
-                    refHeader.current.classList.remove("sticky")
-                    refHeader.current.classList.add("container")
-                    return window.scrollY
-                }
-                return e
-            })
+            //         return window.scrollY
+            //     } else if (window.scrollY < 140) {
+            //         refHeader.current.classList.remove("sticky")
+            //         refHeader.current.classList.add("container")
+            //         return window.scrollY
+            //     }
+            //     return e
+            // })
+            setScrolled(window.scrollY > 120)
 
         }
         window.addEventListener("scroll", handleScroll)
@@ -77,7 +78,7 @@ const Navbar = () => {
     }
     return (
         <nav className={'navbar-main  navbar-default cl-pri none'} >
-            <div className={' container nav-wrapper check_nav'} ref={refHeader}>
+            <div className={ scrolled ? 'sticky' : 'container nav-wrapper check_nav'} >
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className='navbar-collapse nav-ba'>

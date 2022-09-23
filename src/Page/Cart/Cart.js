@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { checkOutCart, removeFromCart, updateCart } from '../../Redux/actions/cart'
 import swal from 'sweetalert';
-
 import '../Cart/Cart.css'
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -15,7 +14,6 @@ const Cart = () => {
         localStorage.setItem('cart', JSON.stringify(products.cartItems))
     }, [products])
     const upDate = (e, data, type) => {
-
         e.preventDefault()
         if (type === "plus") {
             var item = {
